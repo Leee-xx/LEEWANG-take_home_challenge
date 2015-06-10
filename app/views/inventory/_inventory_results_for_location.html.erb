@@ -1,0 +1,16 @@
+<% if inventories %>
+<table class="table table-striped">
+  <tr>
+    <th>Product Name</th>
+    <th>Product Code</th>
+    <th>Count</th>
+  </tr>
+  <% inventories.each do |inventory| %>
+    <tr>
+      <td><%= inventory.product.name %></td>
+      <td><%= inventory.product.code %></td>
+      <td><%= inventory[:total] %></td>
+    </tr>
+  <% end %>
+</table>
+<% end %>

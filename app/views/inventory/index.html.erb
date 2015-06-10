@@ -1,0 +1,18 @@
+<h3>Inventory Lookup</h3>
+
+<form class="form-horizontal">
+  <div class="row">
+    <div class="col-md-8">
+      <input type="text" class="form-control input-lg" id="scan" name="scan" placeholder="Type Product Code or Location Name" value="<%= params[:scan] %>" />
+    </div>
+    <button type="submit" class="btn btn-lg">Find</button>
+  </div>
+</form>
+
+<% if @location %>
+  <h4>Location: <%= @location.name %></h4>
+  <%= render partial: "inventory_results_for_location", locals: { inventories: @inventories } %>
+<% elsif @product %>
+  <h4>Product: <%= @product.name %></h4>
+  <%= render partial: "inventory_results_for_product", locals: { inventories: @inventories } %>
+<% end %>

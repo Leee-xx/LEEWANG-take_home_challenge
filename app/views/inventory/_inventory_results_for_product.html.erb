@@ -1,0 +1,15 @@
+<% if inventories %>
+<table class="table table-striped">
+  <tr>
+    <th>Location</th>
+    <th>Count</th>
+  </tr>
+  <% inventories.each do |inventory| %>
+    <tr>
+      <td><%= inventory.location.name %></td>
+      <td><%= inventory[:total] %></td>
+    </tr>
+  <% end %>
+</table>
+<% end %>
+
