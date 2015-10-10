@@ -41,8 +41,8 @@ You have free reign to modify the data-model, application code, front-end code, 
 
 ## Install
 
-- Clone git repo (how are you viewing this?!)
-- Do all work on a separate git branch and submit a pull request when you feel you are complete.
+- Clone git repo (obviously, how are you viewing this?)
+- Do all work on a separate git branch, commit, and push remote when you feel you are complete.
 - ```cd``` into project directory
 - run ```bundle install```
 - migrate db ```RAILS_ENV=development ./bin/rake db:migrate```
