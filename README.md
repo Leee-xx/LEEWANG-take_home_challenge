@@ -41,12 +41,13 @@ You have free reign to modify the data-model, application code, front-end code, 
 
 ## Install
 
-- Clone git repo (obviously, how are you viewing this?)
-- Do all work on a separate git branch, commit, and push remote when you feel you are complete.
+- Clone git repo: ```git clone gittobi:gittobi/take-home-challenge``` (obviously, how are you viewing this?)
 - ```cd``` into project directory
+- Create new git branch ```git checkout -b master_feature_YOURNAME```
 - run ```bundle install```
 - migrate db ```RAILS_ENV=development ./bin/rake db:migrate```
 - start server ```RAILS_ENV=development ./bin/rails server```
+- Do all work on a separate git branch, commit, and push remote when you feel you are complete.
 
 ## Stack
 - Rails 4.2.1 & SQLite
