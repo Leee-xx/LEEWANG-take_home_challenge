@@ -29,6 +29,8 @@ You have free reign to modify the data-model, application code, front-end code, 
 
 ## Requirements
 
+Please complete both the steps below. 
+
 1. Global Fulfillment
 
  Modify the database schema to support locations at more than one FC. Then pre-populate the new row, rack, and shelf locations for the new FC. There will be 15 rows, 15 racks and 6 shelves in the new FC as opposed to the 10 rows, 10 racks and 5 shelves in our first FC.
