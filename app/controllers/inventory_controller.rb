@@ -1,5 +1,4 @@
 class InventoryController < ApplicationController
-
   def index
     load_from_scan if params[:scan]
   end
@@ -15,5 +14,4 @@ class InventoryController < ApplicationController
       @inventories = Inventory.of_product(@product)
     end
   end
-
 end
