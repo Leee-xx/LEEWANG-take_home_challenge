@@ -30,7 +30,7 @@ You have free reign to modify the data-model, application code, front-end code, 
 
 ## Project Requirements
 
-Please complete both the steps below. 
+Please complete the steps below. 
 1. Support Global Fulfillment
   * Create a fulfullment-center model (minimally a name, city, and country).
   * Modify the locations model to support more than one FC.
