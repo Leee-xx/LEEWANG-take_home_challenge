@@ -32,16 +32,16 @@ You have free reign to modify the data-model, application code, front-end code, 
 
 Please complete the steps below. 
 1. Support Global Fulfillment
-  * Create a fulfullment-center model (minimally a name, city, and country).
-  * Modify the locations model to support more than one FC.
+    * Create a fulfullment-center model (minimally a name, city, and country).
+    * Modify the locations model to support more than one FC.
 
 2. Create a new FC
-  * Pre-populate the locations (row, rack, and shelf) for the FC.  
+    * Pre-populate the locations (row, rack, and shelf) for the FC.  
 _Note: There will be 15 rows, 15 racks and 6 shelves in the new FC (compared to the 10 rows, 10 racks, and 5 shelves in our first FC)._
 
 3. Inventory Lookup Tool
-  * We want to be able to move the location of an inventory item from one FC to another. Modify the 'Inventory Lookup' tool to allow this.
-  * In the search results of the 'Inventory Lookup' tool, 'Product Code' and 'Location' should both be links that perform searches for their own values.
+    * We want to be able to move the location of an inventory item from one FC to another. Modify the 'Inventory Lookup' tool to allow this.
+    * In the search results of the 'Inventory Lookup' tool, 'Product Code' and 'Location' should both be links that perform searches for their own values.
 
 
 ## Install
