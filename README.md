@@ -31,9 +31,10 @@ Please complete both the steps below.
 
 1. Support Global Fulfillment
 
- - Modify the database schema to support locations at more than one FC. 
- - Pre-populate the new row, rack, and shelf locations for the new FC. 
-   - (Note: There will be 15 rows, 15 racks and 6 shelves in the new FC as opposed to the 10 rows, 10 racks and 5 shelves in our first FC.)
+ - Create a fulfullment-center model (minimally a name, city, and country).
+ - Modify the location model to support more than one FC.
+ - Pre-populate the new row, rack, and shelf locations for the new FC.  
+   (Note: There should be 15 rows, 15 racks, and 6 shelves in the new FC (compared to the 10 rows, 10 racks, and 5 shelves in our first FC.)
 
 2. Inventory Lookup Tool
 
@@ -45,11 +46,12 @@ Please complete both the steps below.
 
 - Clone git repo: ```git clone gittobi:gittobi/take-home-challenge``` (obviously, how are you viewing this?)
 - ```cd``` into project directory
-- Create new git branch ```git checkout -b master_feature_YOURNAME```
+- Create new git branch ```git checkout -b YOURNAME/take_home_challenge```
 - run ```bundle install```
-- migrate db ```RAILS_ENV=development ./bin/rake db:migrate```
+- migrate db ```RAILS_ENV=development ./bin/rake db:setup```
 - start server ```RAILS_ENV=development ./bin/rails server```
-- Do all work on a separate git branch, commit, and push remote when you feel you are complete.
+- Only work on your new branch.
+- Commit and push to remote when you feel you are complete.
 
 ## Stack
 - Rails 4.2.1 & SQLite
