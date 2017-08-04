@@ -1,6 +1,6 @@
 # Take-home challenge: Global FC
 
-Tobi is a vertically integrated Women's fashion company. We design, oversee the manufacturing of, warehouse and ship clothing to 140+ countries all over the globe. We wrote our own warehouse management system in Ruby on Rails to power our single Fullfillment Center (FC) located in South San Francisco. Among other things, the system tracks where we store inventory on the warehouse floor.
+Tobi is an online fast fashion retailer. We design, produce, and sell our products globally and exclusively on tobi.com. We wrote our own warehouse management system in Ruby on Rails to power our single Fullfillment Center (FC) located in South San Francisco. Among other things, the system tracks where we store inventory on the warehouse floor.
 
 This take home challenge is a simplified web-based inventory management system consisting of products, inventory, and locations backed by a SQLite database. We’ve built an inventory lookup tool that accepts either a ‘product code’ or ‘location’ and displays the results.
 
