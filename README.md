@@ -7,13 +7,16 @@ This application is a simplified web-based inventory management system consistin
 Searching for a product code will return all locations for inventory items of that product. Searching for a warehouse location (row-rack-shelf) will display all inventory items or products stored at that location. Try searching for location “1-1-1”, which corresponds to Row 1, Rack 1, Shelf 1. Note: In our current FC we have 10 rows, 10 racks, and 5 shelves.
 
 ## Vocabulary
-_FC_ : Our fulfillment center, which includes the warehouse, receiving, shipping, and return handling functions.
-
-_Inventory_ : Represents a distinct item of inventory for a given product. If you are selling 10 Red Dresses in size Medium, you will have one product with 10 items of inventory.
-
-_Location_: Our internal representation of a row, rack, and shelf located in our FC for storing inventory items. Location those 3 values dash-delimited.
-
-_Product_: Description of the inventory items being sold.
+<dl>
+  <dt>FC</dt>
+  <dd>Our fulfillment center, which includes the warehouse, receiving, shipping, and return handling functions.</dd>
+  <dt>Inventory</dt>
+  <dd>Represents a distinct item of inventory for a given product. If you are selling 10 Red Dresses in size Medium, you will have one product with 10 items of inventory.</dd>
+  <dt>Location</dt>
+  <dd>Our internal representation of a row, rack, and shelf located in our FC for storing inventory items. Location those 3 values dash-delimited.</dd>
+  <dt>Product</dt>
+  <dd>Description of the inventory items being sold.</dd>
+</dl>
 
 ## Problem
 
@@ -28,18 +31,18 @@ You have free reign to modify the data-model, application code, front-end code, 
 ## Project Requirements
 
 Please complete both the steps below. 
-
 1. Support Global Fulfillment
+  * Create a fulfullment-center model (minimally a name, city, and country).
+  * Modify the locations model to support more than one FC.
 
- - Create a fulfullment-center model (minimally a name, city, and country).
- - Modify the location model to support more than one FC.
- - Pre-populate the new row, rack, and shelf locations for the new FC.  
-   (Note: There should be 15 rows, 15 racks, and 6 shelves in the new FC (compared to the 10 rows, 10 racks, and 5 shelves in our first FC.)
+2. Create a new FC
+  * Pre-populate the locations (row, rack, and shelf) for the FC.
 
-2. Inventory Lookup Tool
+_Note: There will be 15 rows, 15 racks and 6 shelves in the new FC (compared to the 10 rows, 10 racks, and 5 shelves in our first FC)._
 
-  - We want to be able to move the location of product inventory from one FC to another. Modify the 'Inventory Lookup' tool to allow this.
-  - In the search results of the 'Inventory Lookup' tool, 'Product Code' and 'Location' should both be links that perform searches for their own values.
+3. Inventory Lookup Tool
+  * We want to be able to move the location of an inventory item from one FC to another. Modify the 'Inventory Lookup' tool to allow this.
+  * In the search results of the 'Inventory Lookup' tool, 'Product Code' and 'Location' should both be links that perform searches for their own values.
 
 
 ## Install
