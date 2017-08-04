@@ -36,8 +36,7 @@ Please complete the steps below.
   * Modify the locations model to support more than one FC.
 
 2. Create a new FC
-  * Pre-populate the locations (row, rack, and shelf) for the FC.
-
+  * Pre-populate the locations (row, rack, and shelf) for the FC.  
 _Note: There will be 15 rows, 15 racks and 6 shelves in the new FC (compared to the 10 rows, 10 racks, and 5 shelves in our first FC)._
 
 3. Inventory Lookup Tool
