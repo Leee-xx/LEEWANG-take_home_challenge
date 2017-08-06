@@ -3,11 +3,22 @@
             <tr>
               <th>Location</th>
               <th>Count</th>
+              <th>Fulfillment Center</th>
+              <th>Move</th>
             </tr>
 <%-   inventories.each do |inventory| -%>
             <tr>
-              <td><%= inventory.location.name %></td>
+              <td><%= link_to(inventory.location.name, scan: inventory.location.name) %></td>
               <td><%= inventory[:total] %></td>
+              <td><%= inventory[:fulfillment_center] %></td>
+              <td>
+                <%= form_for inventory.location, url: {action: "move"}, method: :post do |f| %>
+                  <%= hidden_field_tag(:location_id, inventory.location.id) %>
+                  <%= hidden_field_tag(:scan, params[:scan]) %>
+                  <%= f.collection_select(:fulfillment_center_id, @fcenters, :id, :name) %>
+                  <%= f.button "Move" %>
+                <% end %>
+              </td>
             </tr>
 <%-   end -%>
           </table>

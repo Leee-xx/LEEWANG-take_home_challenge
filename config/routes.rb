@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   root 'welcome#index'
 
   get 'inventory' => 'inventory#index'
+  post 'move' => 'inventory#move'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
